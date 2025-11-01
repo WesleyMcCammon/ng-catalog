@@ -1,0 +1,35 @@
+<section class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
+    <div class="absolute inset-0">
+        <img [src]="splashImageUrl"
+                [alt]="splashImageAltText" 
+                class="w-full h-full object-cover opacity-30"
+                onerror="this.src=`${splashErrorImageUrl}`; this.onerror=null;">
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                {{splashImageTextOverlayTitle}}
+                <span class="block text-gradient bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">{{splashImageTextOverlaySubTitle}}</span>
+            </h1>
+            <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                {{splashImageTextOverlayDescription}}
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="catalog" class="btn-primary text-lg px-8 py-4">Explore Catalog</a>
+                <a href="categories" class="btn-secondary text-lg px-8 py-4 bg-white/10 text-white border-white/20 hover:bg-white/20">Browse Categories</a>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Floating Product Cards -->
+    <div class="absolute top-20 right-10 hidden lg:block animate-pulse-subtle">
+        <div class="card p-4 w-48 bg-white/95 backdrop-blur-sm">
+            <img src="https://images.unsplash.com/photo-1662397315021-30c862c10451" 
+                    alt="Premium wireless headphones with sleek black design" 
+                    class="w-full h-32 object-cover rounded-lg mb-3"
+                    onerror="this.src='https://images.pixabay.com/photo/2018/09/17/14/27/headphones-3683983_1280.jpg'; this.onerror=null;">
+            <h3 class="font-semibold text-sm text-primary">Premium Headphones</h3>
+            <p class="text-accent font-bold">$299</p>
+        </div>
+    </div>
+</section>

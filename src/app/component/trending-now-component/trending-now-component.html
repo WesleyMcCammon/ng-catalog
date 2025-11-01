@@ -1,0 +1,148 @@
+<!-- Trending Products -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Trending Now</h2>
+            <p class="text-lg text-secondary">Popular products based on customer engagement</p>
+        </div>
+        <a href="catalog" class="hidden md:flex items-center text-accent font-medium hover:text-blue-700 transition-colors">
+            View All
+            <svg class="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+        </a>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Trending Product 1 -->
+            <div class="card group cursor-pointer" onclick="window.location.href='product-detail'">
+                <div class="relative overflow-hidden rounded-t-lg">
+                    <img src="https://images.unsplash.com/photo-1691649485760-290d484ed095" 
+                            alt="Premium wireless headphones with noise cancellation technology" 
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            onerror="this.src='https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=500'; this.onerror=null;">
+                    <div class="absolute top-3 left-3 bg-success text-white px-2 py-1 rounded-full text-xs font-medium">
+                        Trending
+                    </div>
+                    <button class="absolute top-3 right-3 p-2 bg-white/80 rounded-full hover:bg-white transition-colors">
+                        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-primary mb-2">Wireless Headphones Pro</h3>
+                    <p class="text-secondary text-sm mb-3">Premium noise-canceling technology</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-accent">$299</span>
+                        <div class="flex items-center text-yellow-500">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                            </svg>
+                            <span class="text-sm text-gray-600 ml-1">4.8 (124)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trending Product 2 -->
+            <div class="card group cursor-pointer" onclick="window.location.href='product-detail'">
+                <div class="relative overflow-hidden rounded-t-lg">
+                    <img src="https://images.unsplash.com/photo-1667314614144-70f573045acf" 
+                            alt="Stylish running shoes with modern athletic design and comfort technology" 
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            onerror="this.src='https://images.pixabay.com/photo/2016/11/19/18/06/feet-1840619_1280.jpg'; this.onerror=null;">
+                    <div class="absolute top-3 left-3 bg-warning text-white px-2 py-1 rounded-full text-xs font-medium">
+                        Hot
+                    </div>
+                    <button class="absolute top-3 right-3 p-2 bg-white/80 rounded-full hover:bg-white transition-colors">
+                        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-primary mb-2">Athletic Running Shoes</h3>
+                    <p class="text-secondary text-sm mb-3">Lightweight comfort technology</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-accent">$149</span>
+                        <div class="flex items-center text-yellow-500">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                            </svg>
+                            <span class="text-sm text-gray-600 ml-1">4.6 (89)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trending Product 3 -->
+            <div class="card group cursor-pointer" onclick="window.location.href='product-detail'">
+                <div class="relative overflow-hidden rounded-t-lg">
+                    <img src="https://images.unsplash.com/photo-1512517163675-1f33512b0582" 
+                            alt="Elegant ceramic coffee mug with minimalist design perfect for morning routines" 
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            onerror="this.src='https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=500'; this.onerror=null;">
+                    <div class="absolute top-3 left-3 bg-accent text-white px-2 py-1 rounded-full text-xs font-medium">
+                        New
+                    </div>
+                    <button class="absolute top-3 right-3 p-2 bg-white/80 rounded-full hover:bg-white transition-colors">
+                        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-primary mb-2">Ceramic Coffee Mug</h3>
+                    <p class="text-secondary text-sm mb-3">Handcrafted minimalist design</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xl font-bold text-accent">$24</span>
+                        <div class="flex items-center text-yellow-500">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                            </svg>
+                            <span class="text-sm text-gray-600 ml-1">4.9 (67)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trending Product 4 -->
+            <div class="card group cursor-pointer" onclick="window.location.href='product-detail'">
+                <div class="relative overflow-hidden rounded-t-lg">
+                    <img src="https://images.unsplash.com/photo-1651363216111-54431e490eb2" 
+                            alt="Modern desk lamp with adjustable LED lighting and sleek contemporary design" 
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            onerror="this.src='https://images.pixabay.com/photo/2017/03/25/17/55/color-2174045_1280.png'; this.onerror=null;">
+                    <div class="absolute top-3 left-3 bg-error text-white px-2 py-1 rounded-full text-xs font-medium">
+                        Sale
+                    </div>
+                    <button class="absolute top-3 right-3 p-2 bg-white/80 rounded-full hover:bg-white transition-colors">
+                        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold text-primary mb-2">LED Desk Lamp</h3>
+                    <p class="text-secondary text-sm mb-3">Adjustable brightness & color</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xl font-bold text-accent">$79</span>
+                            <span class="text-sm text-gray-400 line-through">$99</span>
+                        </div>
+                        <div class="flex items-center text-yellow-500">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                            </svg>
+                            <span class="text-sm text-gray-600 ml-1">4.7 (156)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-8 md:hidden">
+            <a href="catalog" class="btn-primary">View All Products</a>
+        </div>
+    </div>
+</section>
