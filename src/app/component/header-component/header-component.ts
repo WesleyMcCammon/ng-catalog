@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UtilityService } from '../../service/utility-service';
+import { Site } from '../../model/site-model';
 
 @Component({
   selector: 'app-header-component',
@@ -8,7 +9,7 @@ import { UtilityService } from '../../service/utility-service';
   styleUrl: './header-component.css',
 })
 export class HeaderComponent implements OnInit {
-  pageTitle: string = 'Affiliate Sites';
+  siteTitle: string = 'No title';
   activeLink: string = '';
 
   constructor(private utilityService: UtilityService) {}
@@ -16,7 +17,11 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.utilityService.pageChangeEventEmitter.subscribe((name: string) => {
       this.activeLink = name;
-    });    
+    });   
+
+    this.utilityService.getSiteInfo().subscribe((site: Site) => {
+      this.siteTitle = site.title;
+    }); 
   }
   public setActive($event: any): void {
     const splitLink = $event.srcElement.href.split('/');
